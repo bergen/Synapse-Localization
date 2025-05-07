@@ -1,0 +1,17 @@
+_name_: utr_classification
+dataset_name: utr_classification
+csv_path:
+train_fasta_path:
+validation_fasta_path:
+test_fasta_path:
+predict_fasta_path:
+synapse_label_name:
+upsample: True
+max_length: 1024
+d_output: 2 
+batch_size: 8  # per GPU
+batch_size_eval: ${.batch_size}
+num_workers: 4  # For preprocessing only
+add_eos: False
+__l_max: ${.max_length}
+shuffle: true  # set this as default!

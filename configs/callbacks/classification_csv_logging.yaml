@@ -1,0 +1,3 @@
+classification_csv_logging:
+  # _target_: callbacks.csv_logging.RawDataLoggingCallback
+  _name_: classification_csv_logging

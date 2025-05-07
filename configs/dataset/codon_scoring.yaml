@@ -1,0 +1,12 @@
+_name_: codon_scoring
+dataset_name: codon_scoring
+predict_fasta_path:
+upsample: True
+max_length: 1024
+d_output: 2 
+batch_size: 8  # per GPU
+batch_size_eval: ${.batch_size}
+num_workers: 4  # For preprocessing only
+add_eos: False
+__l_max: ${.max_length}
+shuffle: true  # set this as default!
